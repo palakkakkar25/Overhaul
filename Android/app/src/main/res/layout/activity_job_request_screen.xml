@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="580dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="4dp">
+
+            <EditText
+                android:id="@+id/editTextDescription"
+                android:layout_width="362dp"
+                android:layout_height="106dp"
+                android:layout_alignStart="@+id/editTextWeight"
+                android:layout_below="@+id/editText3"
+                android:layout_marginTop="23dp"
+                android:backgroundTint="@android:color/transparent"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                android:singleLine="false"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="75dp" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="134dp"
+                android:layout_height="48dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@android:color/transparent"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none"
+                android:text="Request a Job"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="130dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <EditText
+                android:id="@+id/editTextWeight"
+                android:layout_width="362dp"
+                android:layout_height="46dp"
+                android:layout_below="@+id/editTextDescription"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dp"
+                android:ems="10"
+                android:hint="Weight Estimate:"
+                android:inputType="number"
+                tools:layout_editor_absoluteX="6dp"
+                tools:layout_editor_absoluteY="189dp" />
+
+            <EditText
+                android:id="@+id/editTextPickup"
+                android:layout_width="362dp"
+                android:layout_height="50dp"
+                android:layout_alignStart="@+id/editTextWeight"
+                android:layout_below="@+id/editTextWeight"
+                android:ems="10"
+                android:hint="Pickup:"
+                android:inputType="textPostalAddress"
+                tools:layout_editor_absoluteX="9dp"
+                tools:layout_editor_absoluteY="243dp" />
+
+            <EditText
+                android:id="@+id/editTextDestination"
+                android:layout_width="362dp"
+                android:layout_height="45dp"
+                android:layout_alignStart="@+id/editTextPickup"
+                android:layout_below="@+id/editTextPickup"
+                android:ems="10"
+                android:hint="Destination:"
+                android:inputType="textPostalAddress"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="304dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxLoad"
+                android:layout_width="192dp"
+                android:layout_height="31dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/editTextDestination"
+                android:layout_marginTop="13dp"
+                android:text="Load Help Required"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="349dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxUnload"
+                android:layout_width="192dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/checkBoxLoad"
+                android:text="Unload Help Required"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="389dp" />
+
+            <Button
+                android:id="@+id/button_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editText"
+                android:layout_below="@+id/checkBoxUnload"
+                android:layout_marginTop="11dp"
+                android:text="Upload Image"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="423dp" />
+
+            <EditText
+                android:id="@+id/editTextPrice"
+                android:layout_width="362dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/button_upload"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:hint="Total Price:"
+                android:inputType="numberDecimal"
+                tools:layout_editor_absoluteX="6dp"
+                tools:layout_editor_absoluteY="472dp" />
+
+            <Button
+                android:id="@+id/button_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="26dp"
+                android:layout_toStartOf="@+id/checkBoxUnload"
+                android:text="Send Request"
+                tools:layout_editor_absoluteX="130dp"
+                tools:layout_editor_absoluteY="512dp" />
+
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editTextPrice"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="34dp"
+                android:text="Cancel" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editTextDescription"
+                android:layout_alignStart="@+id/editTextDescription"
+                android:layout_below="@+id/editText"
+                android:ems="10"
+                android:hint="Title"
+                android:inputType="textPersonName" />
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

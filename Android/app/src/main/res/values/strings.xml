@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Overhaul</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- Login Home Screen Values -->
+    <string name="sign_up">Sign Up</string>
+    <string name="log_in">Log In</string>
+    <string name="user_email">Email</string>
+    <string name="user_password">Password</string>
+    <string name="user_customer">Customer</string>
+    <string name="user_driver">Driver</string>
+    <string name="title_activity_job_request">JobRequest</string>
+    <string name="title_activity_wait_screen">WaitScreen</string>
+    <string name="title_activity_rate_screen">RateScreen</string>
+
+    <!-- activity_credit_card_info.xml -->
+    <string name="cc_title">Credit Card Information</string>
+    <string name="cc_number">Credit Card Number</string>
+    <string name="cc_types">MasterCard,Visa,Discover,American Express,</string>
+    <string name="cc_date">Ex: 01/20</string>
+    <string name="cc_scode">Security Code</string>
+    <string name="cc_cancel">Cancel</string>
+    <string name="cc_submit">Submit</string>
+
+    <!-- Driver Account Information -->
+    <string name="acc_title">Account Information</string>
+    <string name="acc_number">Account Number</string>
+    <string name="acc_number2">Retype Account Number</string>
+    <string name="acc_routing">Routing Number</string>
+    <string name="acc_bank">Bank</string>
+    <string name="acc_cancel">Cancel</string>
+    <string name="acc_submit">Submit</string>
+    <string name="title_activity_driver_details">driver_details</string>
+    <string name="title_activity_update_customer_information">UpdateCustomerInformation</string>
+
+</resources>

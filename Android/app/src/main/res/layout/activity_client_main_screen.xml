@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mdo3.overhaul.ClientMainScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button_logout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="38dp"
+            android:text="Logout"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="320dp" />
+
+        <Button
+            android:id="@+id/button_request_driver"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp"
+            android:text="Request Driver"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="39dp" />
+
+        <fragment
+            android:id="@+id/map_View"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_above="@+id/button_logout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/button_edit_account"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_request_driver"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="39dp"
+            android:text="Edit Account" />
+
+        <TextView
+            android:id="@+id/errorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/map_View"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="38dp"
+            android:text="There was an error. Please try again."
+            android:textColor="@android:color/holo_red_dark" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

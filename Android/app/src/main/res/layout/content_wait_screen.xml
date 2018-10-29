@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="563dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="4dp">
+
+        <ImageButton
+            android:id="@+id/button_queryDB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/ic_refresh_black_24dp"
+            tools:layout_editor_absoluteX="329dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/completeButton"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="13dp"
+            android:text="Mark Job Complete"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="503dp" />
+
+        <TextView
+            android:id="@+id/waitText"
+            android:layout_width="253dp"
+            android:layout_height="315dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/button_queryDB"
+            android:layout_marginEnd="42dp"
+            android:layout_marginTop="31dp"
+            android:text="Please Wait While We Find You A Driver!"
+            android:textSize="36sp"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="113dp" />
+
+        <Button
+            android:id="@+id/viewDriverButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/waitText"
+            android:layout_centerHorizontal="true"
+            android:text="View Driver"
+            tools:layout_editor_absoluteX="138dp"
+            tools:layout_editor_absoluteY="361dp" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/completeButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="19dp"
+            android:text="Cancel"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="435dp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

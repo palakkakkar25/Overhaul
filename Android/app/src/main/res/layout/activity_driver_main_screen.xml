@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mdo3.overhaul.DriverMainScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="90dp">
+
+        <Button
+            android:id="@+id/button_logout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button_dropoff"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="51dp"
+            android:text="Logout"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="320dp" />
+
+        <Button
+            android:id="@+id/button_pickup"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/button_edit_vehicle"
+            android:layout_below="@+id/button_edit_vehicle"
+            android:layout_marginTop="35dp"
+            android:text="Go to Pick-Up" />
+
+        <Button
+            android:id="@+id/button_dropoff"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/button_pickup"
+            android:layout_below="@+id/button_pickup"
+            android:layout_marginTop="17dp"
+            android:text="Go to Drop-Off" />
+
+        <Switch
+            android:id="@+id/switch_active"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_edit_account"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            android:text="Inactive"
+            android:textOff="Inactive"
+            android:textOn="Active" />
+
+        <Button
+            android:id="@+id/button_edit_vehicle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/switch_active"
+            android:layout_below="@+id/switch_active"
+            android:layout_marginTop="42dp"
+            android:text="Edit Vehicle" />
+
+        <Button
+            android:id="@+id/button_queryDB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_logout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="Query" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
